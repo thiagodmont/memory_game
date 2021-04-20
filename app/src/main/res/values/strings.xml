@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Memory Game</string>
+    <string name="back_button_description">Back button</string>
+    <string name="threexfour">3 x 4</string>
+    <string name="fivextwo">5 x 2</string>
+    <string name="fourxfour">4 x 4</string>
+    <string name="fourxfive">4 x 5</string>
+    <string name="play_again">Wooow! Play again</string>
+</resources>

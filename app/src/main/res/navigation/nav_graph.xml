@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/lobbyFragment">
+
+    <fragment
+        android:id="@+id/lobbyFragment"
+        android:name="com.crazy.memory.game.ui.lobby.LobbyFragment"
+        android:label="LobbyFragment" >
+        <action
+            android:id="@+id/action_lobbyFragment_to_gamePlayFragment"
+            app:destination="@id/gamePlayFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/gamePlayFragment"
+        android:name="com.crazy.memory.game.ui.gameplay.GamePlayFragment"
+        android:label="GamePlayFragment">
+        <argument
+            android:name="row"
+            app:argType="integer" />
+        <argument
+            android:name="column"
+            app:argType="integer" />
+    </fragment>
+</navigation>
